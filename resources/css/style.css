@@ -20,6 +20,7 @@ DARKER GREEN rgb(62, 121, 89) */
     height: 0;
     visibility: hidden;
 }
+
 /*------------------------------------------------------*/
 /*Reusable Content*/
 /*------------------------------------------------------*/
@@ -47,16 +48,62 @@ section {
 }
 
 /*---------------H_----------------*/
-
 .T1Gold {
     color: rgb(207, 184, 124);
     font-weight: 100;
+    animation: moveInLeft 1s ease-out;
+    display: block;
+    font-size: 68%;
 }
 
 .T1Green {
     color: rgb(87, 168, 123);
     font-weight: 100;
+    display: block;
+    animation: moveInRight 1s ease-out;
+    margin-bottom: 10px;
 }
+.tagline {
+    font-size: 68%;
+    margin-top: 5px;
+    animation: moveInUp 1s ease-out;
+    display: block;
+}
+/*---------------H animations ----------------*/
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInUp {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*---------------H_----------------*/
 
 
 h1,
@@ -150,11 +197,9 @@ a {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
 
+    transition: all 0.2s;
+}
 .btn-full:link,
 .btn-full:visited {
     background-color: rgb(87, 168, 123);
@@ -172,6 +217,15 @@ a {
 .btn:hover,
 .btn:active {
     background-color: rgb(62, 121, 89);
+    
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 .btn-full:hover,
 .btn-full:active {
@@ -194,8 +248,9 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 95vh;
     background-attachment: fixed;
+
 }
 
 .hero-text-box {
@@ -398,6 +453,17 @@ header {
     height: 70px;
     width: auto;
     margin-left: -10px;
+}
+.btn-nav {
+    transition: all 0.2s;
+}
+.btn-nav:hover {
+    transform: translateY(-3px);
+
+}
+.btn-nav:active {
+    transform: translateY(-1px);
+
 }
 
 /*------------------------------------------------------*/
@@ -605,7 +671,8 @@ footer {
 }
 .ig:hover,
 .fb:hover,
-.lin:hover {
+.lin:hover,
+.twi:hover {
     -webkit-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s;
@@ -619,14 +686,22 @@ footer {
 .lin:hover {
     color: #2867B2;
 }
+.twi:hover {
+    color: #1DA1F2;
+}
 footer p {
     color: #888;
     text-align: center;
 }
 footer img {
-    width: 100%;
+    width: 10%;
     height: auto;
-
+}
+.footer__img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

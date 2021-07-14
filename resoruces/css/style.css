@@ -51,13 +51,32 @@ section {
 .T1Gold {
     color: rgb(207, 184, 124);
     font-weight: 100;
+    animation: moveInLeft 1s ease-out;
+    display: block;
 }
 
 .T1Green {
     color: rgb(87, 168, 123);
     font-weight: 100;
+    display: block;
+}
+/*---------------H animations ----------------*/
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
+
+/*---------------H_----------------*/
 
 h1,
 h2,
