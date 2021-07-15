@@ -494,7 +494,29 @@ a {
     opacity: 1;
 }
 
+/*------------------------------------------------------*/
+/*Moving*/
+/*------------------------------------------------------*/
+.lrc__moving {
+    height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/CityHeights.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.we-move {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 
+}
+.CH-txt {
+    color: rgb(207, 184, 124);
+}
 /*------------------------------------------------------*/
 /*Sign-Up Section*/
 /*------------------------------------------------------*/
