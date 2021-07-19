@@ -499,13 +499,21 @@ a {
 /*------------------------------------------------------*/
 .lrc__moving {
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/CityHeights.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/CityHeights-min.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/CityHeights-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/CityHeights-min.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .we-move {
     color: #fff;
@@ -600,8 +608,8 @@ a {
 /*Testimonials*/
 /*------------------------------------------------------*/
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgb(0,0,0,0.6))), url(img/CUD_campus_020_4300-HDR-min.jpg);
     background-image: -o-linear-gradient(rgba(0,0,0,0.6), rgb(0,0,0,0.6)), url(img/CUD_campus_020_4300-HDR-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.6)), to(rgb(0,0,0,0.6))), url(img/CUD_campus_020_4300-HDR-min.jpg);
     background-image: linear-gradient(rgba(0,0,0,0.6), rgb(0,0,0,0.6)), url(img/CUD_campus_020_4300-HDR-min.jpg);
     background-attachment: fixed;
     background-size: cover;
